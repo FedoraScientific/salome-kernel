@@ -125,7 +125,7 @@ MACRO(OMNIORB_ADD_MODULE module idlfiles incdirs)
       COMMAND ${OMNIORB_IDL_COMPILER} ${_cxx_flags} ${_input_cmd}
       DEPENDS ${_input_cmd})
     
-    INSTALL(FILES ${_input_cmd} DESTINATION idl/salome)
+    INSTALL(FILES ${_input_cmd} DESTINATION ${SALOME_INSTALL_IDLS})
     INSTALL(FILES ${_inc}   DESTINATION include/salome)
 
     IF(OMNIORB_PYTHON_BACKEND)

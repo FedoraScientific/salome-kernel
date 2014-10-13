@@ -54,5 +54,5 @@ fi
 #============================================================
 
 # omiidl ====================================================
-omniidl -bIDLparser -I ${KERNEL_ROOT_DIR}/idl/salome $@
+omniidl -bIDLparser -I ${KERNEL_ROOT_DIR}/share/idl/salome $@
 #============================================================
