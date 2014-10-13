@@ -136,7 +136,7 @@ SALOME_PACKAGE_REPORT_AND_CHECK()
 # ===========
 SET(SALOME_INSTALL_BINS bin/salome CACHE PATH "Install path: SALOME binaries")
 SET(SALOME_INSTALL_LIBS lib/salome CACHE PATH "Install path: SALOME libs")
-SET(SALOME_INSTALL_IDLS idl/salome CACHE PATH "Install path: SALOME IDL files")
+SET(SALOME_INSTALL_IDLS share/idl/salome CACHE PATH "Install path: SALOME IDL files")
 SET(SALOME_INSTALL_HEADERS include/salome CACHE PATH "Install path: SALOME headers")
 SET(SALOME_INSTALL_SCRIPT_SCRIPTS ${SALOME_INSTALL_BINS} CACHE PATH 
    "Install path: SALOME scripts")

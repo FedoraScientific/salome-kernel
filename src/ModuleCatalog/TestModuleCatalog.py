@@ -31,7 +31,7 @@ print "======================================================================"
 
 import os
 os.system('runIDLparser -Wbcatalog=x \
-                 ${KERNEL_ROOT_DIR}/idl/salome/SALOME_TestModuleCatalog.idl')
+                 ${KERNEL_ROOT_DIR}/share/idl/salome/SALOME_TestModuleCatalog.idl')
 
 print "======================================================================"
 print "           Get Catalog "
