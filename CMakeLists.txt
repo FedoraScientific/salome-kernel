@@ -148,12 +148,12 @@ SET(SALOME_INSTALL_APPLISKEL_SCRIPTS ${SALOME_INSTALL_BINS}/appliskel CACHE PATH
    "Install path: SALOME application skeleton - scripts")
 SET(SALOME_INSTALL_APPLISKEL_PYTHON ${SALOME_INSTALL_BINS}/appliskel CACHE PATH 
    "Install path: SALOME application skeleton - Python")
-SET(SALOME_INSTALL_CMAKE salome_adm/cmake_files CACHE PATH "Install path: SALOME CMake files")
-SET(SALOME_INSTALL_CMAKE_LOCAL adm_local/cmake_files CACHE PATH 
+SET(SALOME_INSTALL_CMAKE share/salome/adm/cmake_files CACHE PATH "Install path: SALOME CMake files")
+SET(SALOME_INSTALL_CMAKE_LOCAL share/salome/adm/cmake_files CACHE PATH
    "Install path: local SALOME CMake files")
-SET(SALOME_INSTALL_AMCONFIG salome_adm/unix CACHE PATH 
+SET(SALOME_INSTALL_AMCONFIG share/salome/adm/unix CACHE PATH
    "Install path: SALOME config files (obsolete, to be removed)")
-SET(SALOME_INSTALL_AMCONFIG_LOCAL adm_local/unix CACHE PATH 
+SET(SALOME_INSTALL_AMCONFIG_LOCAL share/salome/adm/unix CACHE PATH
    "Install path: local SALOME config files (obsolete, to be removed)")
 
 SET(_pydir lib${LIB_SUFFIX}/python${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}/site-packages)
