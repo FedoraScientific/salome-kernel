@@ -60,7 +60,7 @@ listfiles=$listfiles"\
 #    salome/kernel/threadhelper.py"
 
 MODULE_ROOT_DIR=@prefix@
-MODULE_PYTHON_DIR=$MODULE_ROOT_DIR/lib/python@PYTHON_VERSION@/site-packages/salome
+MODULE_PYTHON_DIR=$MODULE_ROOT_DIR/lib@LIB_SUFFIX@/python@PYTHON_VERSION@/site-packages/salome
 PYTHONPATH=$MODULE_PYTHON_DIR:$PYTHONPATH
 export PYTHONPATH
 

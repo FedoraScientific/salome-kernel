@@ -135,7 +135,7 @@ SALOME_PACKAGE_REPORT_AND_CHECK()
 # Python version string for example).
 # ===========
 SET(SALOME_INSTALL_BINS bin/salome CACHE PATH "Install path: SALOME binaries")
-SET(SALOME_INSTALL_LIBS lib/salome CACHE PATH "Install path: SALOME libs")
+SET(SALOME_INSTALL_LIBS lib${LIB_SUFFIX}/salome CACHE PATH "Install path: SALOME libs")
 SET(SALOME_INSTALL_IDLS share/idl/salome CACHE PATH "Install path: SALOME IDL files")
 SET(SALOME_INSTALL_HEADERS include/salome CACHE PATH "Install path: SALOME headers")
 SET(SALOME_INSTALL_SCRIPT_SCRIPTS ${SALOME_INSTALL_BINS} CACHE PATH 
@@ -156,7 +156,7 @@ SET(SALOME_INSTALL_AMCONFIG salome_adm/unix CACHE PATH
 SET(SALOME_INSTALL_AMCONFIG_LOCAL adm_local/unix CACHE PATH 
    "Install path: local SALOME config files (obsolete, to be removed)")
 
-SET(_pydir lib/python${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}/site-packages)
+SET(_pydir lib${LIB_SUFFIX}/python${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}/site-packages)
 SET(SALOME_INSTALL_PYTHON ${_pydir}/salome CACHE PATH "Install path: SALOME Python stuff")
 SET(SALOME_INSTALL_PYTHON_SHARED ${SALOME_INSTALL_PYTHON}/shared_modules CACHE PATH 
    "Install path: SALOME Python shared modules")
