@@ -513,7 +513,7 @@ Engines_Container_i::load_component_CppImplementation(const char* componentName,
       std::string path;
       char* p=getenv("LD_LIBRARY_PATH");
       if(p)path=p;
-      path=path+SEP+"/usr/lib"+SEP+"/lib";
+      path=path+SEP+"/usr/lib"LIB_SUFFIX+SEP+"/lib"LIB_SUFFIX;
 
       std::string pth;
       if(findpathof(path, pth, impl_name))

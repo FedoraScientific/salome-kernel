@@ -624,7 +624,7 @@ void  LifeCycleCORBATest::testgetLocalFile_localComputer()
 {
   SALOME_LifeCycleCORBA _LCC(&_NS);
   std::string origFileName = getenv("KERNEL_ROOT_DIR");
-  origFileName += "/lib/salome/libSalomeLifeCycleCORBA.so.0.0.0";
+  origFileName += "/lib"LIB_SUFFIX"/salome/libSalomeLifeCycleCORBA.so.0.0.0";
   SALOME_FileTransferCORBA transfer( Kernel_Utils::GetHostname(),
                                      origFileName);
   std::string local = transfer.getLocalFile();
@@ -642,7 +642,7 @@ void  LifeCycleCORBATest::testgetLocalFile_remoteComputer()
 {
   SALOME_LifeCycleCORBA _LCC(&_NS);
   std::string origFileName = getenv("KERNEL_ROOT_DIR");
-  origFileName += "/lib/salome/libSalomeContainer.so.0.0.0";
+  origFileName += "/lib"LIB_SUFFIX"/salome/libSalomeContainer.so.0.0.0";
   SALOME_FileTransferCORBA transfer( GetRemoteHost(),
                                      origFileName);
   std::string local = transfer.getLocalFile();
